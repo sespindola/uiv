@@ -42,7 +42,7 @@
         :class="itemClasses(item,index)"
         @click="toggle(item)"
         @mouseenter="currentActive=-1">
-        <a role="button" v-if="isItemSelected(item)">
+        <a role="button" v-if="isItemSelected(item)" style="background-color: yellow">
           <b>{{item[labelKey]}}</b>
           <span v-if="selectedIcon" :class="selectedIconClasses"></span>
         </a>
